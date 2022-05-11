@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+             <!-- Sidebar Toggle-->
+             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"  ><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a id="icono"href="index.html"><img src="../images/Disney_Logo.png" height="120px" width="120px" style="margin-right: 15px; margin-top: 10px"></a>
+           <div style="text-align: center; margin: auto;">
+                <p style="color: black; font-size: 30px; font-family: Gill Sans";>INICIO</p>        
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <br>
+                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="index.html">
+                                <div><img src="../images/inicio.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                Inicio
+                            </a>
+                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="atracciones.html">
+                                <div><img src="../images/atracciones.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                Atracciones
+                            </a>
+                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="contacto.html">
+                                <div><img src="../images/contacto.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                Contacto
+                            </a>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div> <!--Primera parte del contenido-->
+                        <div class="titulo"> 
+                            <p >¿Quienes somos?</p>
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" style="width: 1024px; height: 750px; margin:auto; margin-top:30px;" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../images/carrusel1.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../images/carrusel2.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../images/carrusel3.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                          <div class="descripcion">
+                             <p>Disneyland Paris, es un complejo turístico recreacional y de vacaciones de 22,3 km² (2230 ha) situado en Marne-la-Vallée, una aglomeración de comunas del departamento de Sena y Marne, al este de París, Francia. El complejo se encuentra en su mayor parte en la comuna de Chessy, a 32 kilómetros del centro de París.
+
+                                El complejo Disneyland Paris consta de dos parques temáticos (Disneyland Park y Walt Disney Studios Park), una zona comercial y de entretenimiento (Disney Village), un golf (Golf Disneyland), siete hoteles oficiales Disney y otros siete asociados. Abrió al público el 12 de abril de 1992, siendo el segundo resort Disney en abrirse fuera de los Estados Unidos de América (después de Tokyo Disney Resort), y el primero perteneciente y explotado por Disney.</p>
+                          </div>
+                    </div> <!--Fin primera parte del contenido-->
+                    <br>
+                    <div id="video"> <!--Segunda parte del contenido-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lcqQ3c8Farg" title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        <div class="descripcion">
+                            <p>A continuacion, podeis ver un video donde aprendereis mas sobre nuestro parque temático.</p>
+                         </div>
+                    </div> <!--Fin segunda parte del contenido-->
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="../js/datatables-simple-demo.js"></script>
+    </body>
+</html>
