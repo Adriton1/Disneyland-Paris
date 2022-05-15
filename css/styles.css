@@ -103,6 +103,12 @@ body {
   margin-right: 55px;
 }
 
+.texto{
+  margin-left: 30px; 
+  font-size: 23px; 
+  font-family: "Gill Sans"
+}
+
 .main {
   flex-grow: 1;
   padding: 20px;

@@ -73,7 +73,6 @@ window.addEventListener('DOMContentLoaded', event => {
     }
     });
 
-
     const letra = document.getElementById("letra")
     document.addEventListener("keydown", function(event){
         var key = event;
