@@ -18,7 +18,7 @@
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <div style="text-align: center; margin: auto;">
-                <p style="color: black; font-size: 30px; font-family: Gill Sans";>CONTACTO</p>        
+                <p style="color: black; font-size: 30px; font-family: Gill Sans";>ENVIO DE POSTAL</p>        
             </div>
         </nav>
         <div id="layoutSidenav">
@@ -27,160 +27,77 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <br>
-                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="index.html">
+                            <a id="inicio" class="nav-link" href="index.html">
                                 <div><img src="../images/inicio.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
                                 Inicio
                             </a>
-                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="atracciones.html">
+							<br>
+                            <a id="atracciones" class="nav-link" href="atracciones.html">
                                 <div><img src="../images/atracciones.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
                                 Atracciones
                             </a>
-                            <a style="font-size: 25px; margin-left: 10px;" class="nav-link" href="contacto.html">
-                                <div><img src="../images/contacto.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
-                                Contacto
+							<br>
+                            <a id="postal" class="nav-link" href="contacto.html">
+                                <div><img src="../images/mailbox.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                Postal
                             </a>
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
-<!--Start of sending an email-->
-</section>
-<section class="ftco-section">
-	<div class="container">
-		<div class="row ">  
-			<div class="col-lg-8 mb-8">
-				<div class="wrapper" style="width: 924px; height: 600px; margin:auto; margin-top:10px; background-image: url(../images/carrusel1.jpeg);">
-					<div class="row no-gutters">
-						<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-							<div class="contact-wrap w-100 p-md-5 p-4">
-								<h3 class="mb-4">¿En qué podemos ayudarte?</h3>
-								<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="label" for="name">Nombre y apellidos</label>
-												<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+					<div id="liveAlertPlaceholder"></div>  <!--Alerta de que todo ha salido bien-->
+					<!--Start of sending an email-->
+					<section class="ftco-section">
+						<div class="container">
+							<div class="row ">  
+								<div class="col-lg-8 mb-8">
+									<div class="wrapper" style="width: 924px; height: 600px; margin:auto; margin-top:10px; background-image: url(../images/carrusel1.jpeg);">
+										<div class="row no-gutters">
+											<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+												<div class="contact-wrap w-100 p-md-5 p-4">
+													<h3 class="mb-4">ENVIA TU POSTAL AQUI</h3>
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="label" for="name">Nombre y apellidos</label>
+																	<input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+																</div>
+															</div>
+															<div class="col-md-6"> 
+																<div class="form-group">
+																	<label class="label" for="email">Dirección de email </label>
+																	<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+																</div>
+															</div>
+															<div class="col-md-12">
+																<div class="form-group">
+																	<label class="label" for="subject">Asunto</label>
+																	<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto">
+																</div>
+															</div>
+															<div class="col-md-12">
+																<div class="form-group">
+																	<label class="label" for="#">Mensaje</label>
+																	<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mensaje"></textarea>
+																</div>
+															</div>
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input id="liveAlertBtn" type="submit" value="Enviar Mensaje" class="btn btn-primary">
+																	<div class="submitting"></div>
+																</div>
+															</div>
+														</div>
+												</div>
 											</div>
-										</div>
-										<div class="col-md-6"> 
-											<div class="form-group">
-												<label class="label" for="email">Dirección de email </label>
-												<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="form-group">
-												<label class="label" for="subject">Asunto</label>
-												<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="form-group">
-												<label class="label" for="#">Mensaje</label>
-												<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="form-group">
-												<input type="submit" value="Enviar Mensaje" class="btn btn-primary">
-												<div class="submitting"></div>
-											</div>
+										<!--Aqui i"-->	
 										</div>
 									</div>
-								</form>
+								</div>								
 							</div>
 						</div>
-					<!--Aqui i"-->	
-					</div>
-				</div>
-			</div>
-				
-		</div>
-	</div>
-</section>
-<!--End of sending an email-->
-
-
-<!--Start of frequent questions 
-<section class="ftco-section2">
-	<div class="container">
-		<div class="row1" style="align-content: center;">
-				<div class="subapartado">
-											
-						<div class="titulo1">
-							<p class="titulo"> PREGUANTAS FRECUENTES</p>
-						</div>
-								
-								
-					</div>
-					<div class="subapartado">
-						
-						<div class="titulo">
-							<p class="titulo">¿Cuál es el horario de atención al cliente?</p>
-						</div>
-
-						<div class="info" style="background-image: url(../images/carrusel1.jpeg);">
-							<p class="info"> Horario de atención al cliente: de lunes a viernes de 3 pm a 8 pm.</p>
-						</div>
-
-					</div>
-					<div class="subapartado">
-											
-						<div class="titulo">
-							<p class="titulo">¿Qué tipos de entrada existen?</p>
-						</div>
-								
-						<div class="info" style="background-image: url(../images/carrusel1.jpeg);">
-							<p class="info" > fgf</p>
-						</div>
-								
-					</div>
-								
-					<div class="subapartado">
-											
-						<div class="titulo">
-							<p class="titulo">¿Hay buses?</p>
-						</div>
-
-						<div class="info" style="background-image: url(../images/carrusel1.jpeg);">
-							<p class="info">hola bb</p>
-						</div>
-
-					</div>
-
-					<div class="subapartado">
-						
-						<div class="titulo">
-							<p class="titulo">¿Se puede meter comida?</p>
-						</div>
-
-						<div class="info" style="background-image: url(../images/carrusel1.jpeg);">
-
-							<p class="info">no</p>
-                        </div>
-
-					</div>
-
-					<div class="subapartado">
-						
-						<div class="titulo">
-							<p class="titulo">¿Permiten ir disfrazados?</p>
-						</div>
-
-						<div class="info" style="background-image: url(../images/carrusel1.jpeg);">
-							<p class="info">NO.</p>
-						</div>
-
-					</div>
-				
-			</div>
-		
-</div>
-</section>
-End of frequent questions -->
-
-
+					</section>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

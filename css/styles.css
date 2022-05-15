@@ -528,6 +528,33 @@ progress {
   text-align: center; 
 }
 
+#inicio{
+  font-size: 25px; 
+  margin-left: 10px;
+  border-width: 3px;
+  border-color: var(--bs-purple);
+  border-style: solid;
+  margin-right: 10px;
+}
+
+#atracciones{
+  font-size: 25px; 
+  margin-left: 10px;
+  border-width: 3px;
+  border-color: var(--bs-purple);
+  border-style: solid;
+  margin-right: 10px;
+}
+
+#postal{
+  font-size: 25px; 
+  margin-left: 10px;
+  border-width: 3px;
+  border-color: var(--bs-purple);
+  border-style: solid;
+  margin-right: 10px;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
