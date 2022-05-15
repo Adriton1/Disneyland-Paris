@@ -518,6 +518,24 @@ progress {
   margin-left: 30px;
 }
 
+li{
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+ text-align: center;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
 #video{ 
   margin:auto; 
   text-align: center;
