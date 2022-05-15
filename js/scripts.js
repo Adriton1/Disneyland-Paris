@@ -56,4 +56,39 @@ window.addEventListener('DOMContentLoaded', event => {
     })
     }
 
+    document.querySelector(".side-panel-toggle").addEventListener("click", () => {
+        document.querySelector(".wrapper").classList.toggle("side-panel-open");
+      });
+
+
+    const margen = document.getElementById("prueba")
+    document.querySelector(".side-panel-toggle").addEventListener("click", () => {
+    if(margen.classList.contains('margenAbierto')){
+        margen.classList.remove('margenAbierto');
+        margen.classList.add('margenCerrado');
+    }
+    else{
+        margen.classList.remove('margenCerrado');
+        margen.classList.add('margenAbierto');
+    }
+    });
+
+
+    const letra = document.getElementById("letra")
+    document.addEventListener("keydown", function(event){
+        var key = event;
+        if (key.keyCode == "80") {
+            if (letra.classList.contains('side-panel-open')){
+                letra.classList.remove('side-panel-open');
+                margen.classList.remove('margenAbierto');
+                margen.classList.add('margenCerrado');
+            }
+            else{
+                letra.classList.add('side-panel-open');
+                margen.classList.remove('margenCerrado');
+                margen.classList.add('margenAbierto');
+            }
+        }
+    })
+
 });
