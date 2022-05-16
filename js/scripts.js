@@ -61,48 +61,55 @@ window.addEventListener('DOMContentLoaded', event => {
       });
 
 
-    const margen = document.getElementById("prueba")
+    const margen = document.getElementsByClassName("prueba")
     document.querySelector(".side-panel-toggle").addEventListener("click", () => {
-    if(margen.classList.contains('margenAbierto')){
-        margen.classList.remove('margenAbierto');
-        margen.classList.add('margenCerrado');
-    }
-    else{
-        margen.classList.remove('margenCerrado');
-        margen.classList.add('margenAbierto');
+    for(var i = 0; i<margen.length; i++){
+        if(margen[i].classList.contains('margenAbierto')){
+            margen[i].classList.remove('margenAbierto');
+            margen[i].classList.add('margenCerrado');
+        }
+        else{
+            margen[i].classList.remove('margenCerrado');
+            margen[i].classList.add('margenAbierto');
+        }
     }
     });
 
 
 
-    const letra = document.getElementById("letra")
-    const navbarTop = document.getElementById("prueba")
-    const navbarLeft = document.getElementById("sidenavAccordion")
+    const letra = document.getElementsByClassName("letra")
+    const navbarLeft = document.getElementsByClassName("sidenavAccordion")
     const ini = document.getElementById("inicio")
     const atracc = document.getElementById("atracciones")
     const post = document.getElementById("postal")
     const borde = document.getElementsByClassName("borde")
-    const menuRapidoIni = document.getElementById("menuRapidoIni")
+    const menuRapido = document.getElementsByClassName("menuRapido")
     document.addEventListener("keydown", function(event){
         var key = event;
         if (key.keyCode == "80") {
-            if (letra.classList.contains('side-panel-open')){
-                letra.classList.remove('side-panel-open');
-                margen.classList.remove('margenAbierto');
-                margen.classList.add('margenCerrado');
-            }
-            else{
-                letra.classList.add('side-panel-open');
-                margen.classList.remove('margenCerrado');
-                margen.classList.add('margenAbierto');
+            for (var i = 0; i < letra.length; i++){
+                if (letra[i].classList.contains('side-panel-open')){
+                    letra[i].classList.remove('side-panel-open');
+                    margen[i].classList.remove('margenAbierto');
+                    margen[i].classList.add('margenCerrado');
+                }
+                else{
+                    letra[i].classList.add('side-panel-open');
+                    margen[i].classList.remove('margenCerrado');
+                    margen[i].classList.add('margenAbierto');
+                }
             }
         }
 
         if (key.keyCode == "69"){
             document.styleSheets[0].disabled = true;
             document.body.removeAttribute("class");
-            navbarTop.removeAttribute("class");
-            navbarLeft.removeAttribute("class");
+            for (var i = 0; i< margen.length;i++){
+                margen[i].removeAttribute("class");
+            }
+            for (var i = 0; i< navbarLeft.length;i++){
+                navbarLeft[i].removeAttribute("class");
+            }
             ini.removeAttribute('id');
             atracc.removeAttribute('id');
             post.removeAttribute('id');
@@ -110,7 +117,9 @@ window.addEventListener('DOMContentLoaded', event => {
             for(var i =0; i< bordeLength; i++){
                 borde[0].classList.remove('borde');
             }
-            menuRapidoIni.classList.remove("bg-light");
+            for(var i =0; i< menuRapido.length; i++){
+                menuRapido[i].classList.remove("bg-light");
+            }
         }
     })
 
