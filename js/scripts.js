@@ -73,7 +73,16 @@ window.addEventListener('DOMContentLoaded', event => {
     }
     });
 
+
+
     const letra = document.getElementById("letra")
+    const navbarTop = document.getElementById("prueba")
+    const navbarLeft = document.getElementById("sidenavAccordion")
+    const ini = document.getElementById("inicio")
+    const atracc = document.getElementById("atracciones")
+    const post = document.getElementById("postal")
+    const borde = document.getElementsByClassName("borde")
+    const menuRapidoIni = document.getElementById("menuRapidoIni")
     document.addEventListener("keydown", function(event){
         var key = event;
         if (key.keyCode == "80") {
@@ -87,6 +96,21 @@ window.addEventListener('DOMContentLoaded', event => {
                 margen.classList.remove('margenCerrado');
                 margen.classList.add('margenAbierto');
             }
+        }
+
+        if (key.keyCode == "69"){
+            document.styleSheets[0].disabled = true;
+            document.body.removeAttribute("class");
+            navbarTop.removeAttribute("class");
+            navbarLeft.removeAttribute("class");
+            ini.removeAttribute('id');
+            atracc.removeAttribute('id');
+            post.removeAttribute('id');
+            var bordeLength = borde.length;
+            for(var i =0; i< bordeLength; i++){
+                borde[0].classList.remove('borde');
+            }
+            menuRapidoIni.classList.remove("bg-light");
         }
     })
 

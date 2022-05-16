@@ -9,167 +9,187 @@
         <title>Dashboard - SB Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a id="icono"href="index.html"><img src="../images/Disney_Logo.png" height="120px" width="120px" style="margin-left: 15px; margin-top: 10px"></a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <div style="text-align: center; margin: auto;">
-                <p style="color: black; font-size: 30px; font-family: Gill Sans";>ATRACCIONES</p>        
-            </div>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <br>
-                            <a id="inicio" class="nav-link" href="index.html">
-                                <div><img src="../images/inicio.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
-                                Inicio
-                            </a>
-                            <br>
-                            <a id="atracciones" class="nav-link" href="atracciones.html">
-                                <div><img src="../images/atracciones.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
-                                Atracciones
-                            </a>
-                            <br>
-                            <a id="postal" class="nav-link" href="contacto.html">
-                                <div><img src="../images/mailbox.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
-                                Postal
-                            </a>
-                            </a>
+    <body class="sb-nav-fixed">      
+        <div id="letra" class="wrapper side-panel-open">
+            <div class="main">
+                <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark margenAbierto">
+                    <!-- Navbar Brand-->
+                    <a id="icono"href="index.html"><img src="../images/Disney_Logo.png" height="120px" width="120px" style="margin-left: 15px; margin-top: 10px"></a>
+                    <!-- Sidebar Toggle-->
+                    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+                    <div style="text-align: center; margin: auto;">
+                        <p style="color: black; font-size: 30px; font-family: Gill Sans";>ATRACCIONES</p>        
                     </div>
                 </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div> <!--Primera parte del contenido-->
-                        <div class="titulo"> 
-                            <p >¿Que atracciones encontraras en nuestro parque?</p>
-                        </div>
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Menu Rapido-->
-                            <div class="container-fluid">
-                              <div  class="collapse navbar-collapse" id="navbarNav">
-                                <ul id="menu" class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#ratatui">RATATOUILLE: THE ADVENTURE </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active" href="#tower">THE TWILIGHT ZONE TOWER OF TERROR </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active" href="#montaña">BIG THUNDER MOUNTAIN</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active" href="#pirata">PIRATES' BEACH</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active" href="#racer">RC RACER</a>
-                                  </li>
-                                </ul>
-                              </div>
+                <div id="layoutSidenav">
+                    <div id="layoutSidenav_nav">
+                        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                            <div class="sb-sidenav-menu">
+                                <div class="nav">
+                                    <br>
+                                    <a id="inicio" class="nav-link" href="index.html">
+                                        <div><img src="../images/inicio.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                        Inicio
+                                    </a>
+                                    <br>
+                                    <a id="atracciones" class="nav-link" href="atracciones.html">
+                                        <div><img src="../images/atracciones.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                        Atracciones
+                                    </a>
+                                    <br>
+                                    <a id="postal" class="nav-link" href="contacto.html">
+                                        <div><img src="../images/mailbox.png" style="height: 30px; width: 30px; margin-right:10px" alt=""></div>
+                                        Postal
+                                    </a>
+                                    </a>
                             </div>
-                          </nav> <!--Fin Menu Rapido-->
-                        <div id="ratatui"> <!--Primera atraccion-->
-                            <div class="atracciones">
-                                1. RATATOUILLE: THE ADVENTURE
-                            </div>
-                            <br>
-                            <div>
-                                <img src="../images/ratatui.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
-                                <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=ratatouille-the-adventure"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
-                            </div>
-                            <br>
-                            <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
-                                <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
-                            </div>
-                        </div> <!--Primera atraccion fin -->
-                        <br>
-                        <br>
-                        <br>
-                        <div id="tower"> <!--Segunda atraccion-->
-                            <div class="atracciones">
-                                2. THE TWILIGHT ZONE TOWER OF TERROR 
-                            </div>
-                            <br>
-                            <div>
-                                <img src="../images/tower.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
-                                <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=twilight-zone-tower-of-terror"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
-                            </div>
-                            <br>
-                            <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
-                                <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
-                            </div>
-                        </div> <!--Segunda atraccion fin -->
-                        <br>
-                        <br>
-                        <br>
-                        <div id="montaña"> <!--Tercera atraccion-->
-                            <div class="atracciones">
-                                3. BIG THUNDER MOUNTAIN
-                            </div>
-                            <br>
-                            <div>
-                                <img src="../images/montaña.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
-                                <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=big-thunder-mountain"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
-                            </div>
-                            <br>
-                            <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
-                                <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
-                            </div>
-                        </div> <!--Tercera atraccion fin -->
-                        <br>
-                        <br>
-                        <br>
-                        <div id="pirata"> <!--Cuarta atraccion-->
-                            <div  class="atracciones">
-                                4. PIRATES' BEACH
-                            </div>
-                            <br>
-                            <div>
-                                <img src="../images/pirata.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
-                                <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=pirates-beach"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
-                            </div>
-                            <br>
-                            <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
-                                <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
-                            </div>
-                        </div> <!--Cuarta atraccion fin -->
-                        <br>
-                        <br>
-                        <br>
-                        <div id="racer"> <!--Cuarta atraccion-->
-                            <div  class="atracciones">
-                                5. RC RACER
-                            </div>
-                            <br>
-                            <div>
-                                <img src="../images/racer.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
-                                <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=rc-racer"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
-                            </div>
-                            <br>
-                            <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
-                                <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
-                            </div>
-                        </div> <!--Cuarta atraccion fin -->
-                    </div> <!--Fin primera parte del contenido-->
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
+                        </nav>
                     </div>
-                </footer>
+                    <div id="layoutSidenav_content">
+                        <main>
+                            <div> <!--Primera parte del contenido-->
+                                <div class="titulo"> 
+                                    <p >¿Que atracciones encontraras en nuestro parque?</p>
+                                </div>
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Menu Rapido-->
+                                    <div class="container-fluid">
+                                      <div  class="collapse navbar-collapse" id="navbarNav">
+                                        <ul id="menu" class="navbar-nav borde">
+                                          <li class="nav-item borde">
+                                            <a class="nav-link active" aria-current="page" href="#ratatui">RATATOUILLE: THE ADVENTURE </a>
+                                          </li>
+                                          <li class="nav-item borde">
+                                            <a class="nav-link active" href="#tower">THE TWILIGHT ZONE TOWER OF TERROR </a>
+                                          </li>
+                                          <li class="nav-item borde">
+                                            <a class="nav-link active" href="#montaña">BIG THUNDER MOUNTAIN</a>
+                                          </li>
+                                          <li class="nav-item borde">
+                                            <a class="nav-link active" href="#pirata">PIRATES' BEACH</a>
+                                          </li>
+                                          <li class="nav-item borde">
+                                            <a class="nav-link active" href="#racer">RC RACER</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </nav> <!--Fin Menu Rapido-->
+                                <div id="ratatui"> <!--Primera atraccion-->
+                                    <div class="atracciones">
+                                        1. RATATOUILLE: THE ADVENTURE
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <img src="../images/ratatui.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
+                                        <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=ratatouille-the-adventure"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
+                                    </div>
+                                    <br>
+                                    <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
+                                        <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
+                                    </div>
+                                </div> <!--Primera atraccion fin -->
+                                <br>
+                                <br>
+                                <br>
+                                <div id="tower"> <!--Segunda atraccion-->
+                                    <div class="atracciones">
+                                        2. THE TWILIGHT ZONE TOWER OF TERROR 
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <img src="../images/tower.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
+                                        <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=twilight-zone-tower-of-terror"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
+                                    </div>
+                                    <br>
+                                    <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
+                                        <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
+                                    </div>
+                                </div> <!--Segunda atraccion fin -->
+                                <br>
+                                <br>
+                                <br>
+                                <div id="montaña"> <!--Tercera atraccion-->
+                                    <div class="atracciones">
+                                        3. BIG THUNDER MOUNTAIN
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <img src="../images/montaña.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
+                                        <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=big-thunder-mountain"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
+                                    </div>
+                                    <br>
+                                    <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
+                                        <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
+                                    </div>
+                                </div> <!--Tercera atraccion fin -->
+                                <br>
+                                <br>
+                                <br>
+                                <div id="pirata"> <!--Cuarta atraccion-->
+                                    <div  class="atracciones">
+                                        4. PIRATES' BEACH
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <img src="../images/pirata.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
+                                        <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=pirates-beach"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
+                                    </div>
+                                    <br>
+                                    <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
+                                        <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
+                                    </div>
+                                </div> <!--Cuarta atraccion fin -->
+                                <br>
+                                <br>
+                                <br>
+                                <div id="racer"> <!--Cuarta atraccion-->
+                                    <div  class="atracciones">
+                                        5. RC RACER
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <img src="../images/racer.jpeg" style="height: 400px; width: 600px; margin-left: 30px;" alt="">
+                                        <a href="https://www.disneylandparis.com/es-es/atracciones/mapa/#/id=rc-racer"><img src="../images/map.png" style="height: 167px; width: 279px; margin-left: 100px;" alt=""></a>
+                                    </div>
+                                    <br>
+                                    <div style=" margin-left: 30px; font-size: 23px; font-family: Gill Sans;">
+                                        <p>Aquí podemos observar una imagen de la atracción y un link al mapa de las atracciones de Disney, diciéndonos donde se encuentra la atraccion</p>
+                                    </div>
+                                </div> <!--Cuarta atraccion fin -->
+                            </div> <!--Fin primera parte del contenido-->
+                        </main>
+                        <footer class="py-4 bg-light mt-auto">
+                            <div class="container-fluid px-4">
+                                <div class="d-flex align-items-center justify-content-between small">
+                                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                                    <div>
+                                        <a href="#">Privacy Policy</a>
+                                        &middot;
+                                        <a href="#">Terms &amp; Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <button id="accessPanel" accesskey="p" class="side-panel-toggle" type="button">
+                <span class="material-icons sp-icon-open">keyboard_double_arrow_left</span>
+                <span class="material-icons sp-icon-close">keyboard_double_arrow_right</span>
+            </button>
+            <div class="side-panel">
+                <div>
+                    <b>Incrementar tamaño del texto</b>
+                    <input class="rangeText" type="range" min="0" max="92" value="20">
+                </div>
+                <div>
+                   <b>Pulsa para eliminar los estilos</b>
+                   <button id="eliminar" accesskey="e" class="btn-bd-primary">Eliminar (E)</button> 
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
