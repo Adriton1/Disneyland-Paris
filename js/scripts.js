@@ -124,6 +124,34 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
 
+    document.querySelector("#recupera").addEventListener("click", () => {
+        document.body.classList.add("sb-nav-fixed");
+        for (var i = 0; i< margenLength;i++){
+            margen[i].classList.add("sb-topnav");
+            margen[i].classList.add("navbar"); 
+            margen[i].classList.add("navbar-expand"); 
+            margen[i].classList.add("navbar-dark"); 
+            margen[i].classList.add("bg-dark"); 
+            margen[i].classList.add("margenAbierto"); 
+            margen[i].classList.add("prueba"); 
+        }
+        for (var i = 0; i< navbarLeftLength;i++){
+            navbarLeft[i].classList.add("sb-sidenav");
+            navbarLeft[i].classList.add("accordion");
+            navbarLeft[i].classList.add("sb-sidenav-dark");
+            navbarLeft[i].classList.add("sidenavAccordion");
+        }
+        ini.classList.add('inicio');
+        atracc.classList.add('atraccion');
+        post.classList.add('postal');
+        for(var i =0; i< bordeLen; i++){
+            borde[i].classList.add('borde');
+        }
+        for(var i =0; i< menuRapidoLength; i++){
+            menuRapido[i].classList.add("bg-light");
+        }
+    });
+
     
     document.addEventListener("keydown", function(event){
         var key = event;
@@ -198,6 +226,6 @@ window.addEventListener('DOMContentLoaded', event => {
                 menuRapido[i].classList.add("bg-light");
             }
         }
-    })
+    });
 
 });
