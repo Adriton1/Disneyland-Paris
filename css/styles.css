@@ -632,7 +632,7 @@ th, td{
   text-align: center; 
 }
 
-#inicio{
+.inicio{
   font-size: 25px; 
   margin-left: 10px;
   border-width: 3px;
@@ -641,7 +641,7 @@ th, td{
   margin-right: 10px;
 }
 
-#atracciones{
+.atraccion{
   font-size: 25px; 
   margin-left: 10px;
   border-width: 3px;
@@ -650,7 +650,7 @@ th, td{
   margin-right: 10px;
 }
 
-#postal{
+.postal{
   font-size: 25px; 
   margin-left: 10px;
   border-width: 3px;
